@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.senai.sp.android_retrofit.views.EditActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilNomeFantasia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietNomeFantasia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome Fantasia" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilRazaoSocial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tilNomeFantasia">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tietRazaoSocial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Razão Social" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Salvar"
+        app:layout_constraintTop_toBottomOf="@id/tilRazaoSocial" />
+
+</android.support.constraint.ConstraintLayout>
