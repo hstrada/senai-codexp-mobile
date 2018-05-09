@@ -14,8 +14,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.concurrent.ExecutionException;
+
 import br.senai.sp.android_retrofit_sem_autenticacao.config.RetrofitConfig;
 import br.senai.sp.android_retrofit_sem_autenticacao.model.CEP;
+import br.senai.sp.android_retrofit_sem_autenticacao.service.HttpService;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -61,6 +64,20 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+//        btnBuscar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                try {
+//                    CEP retorno = new HttpService(tilCep.getEditText().getText().toString()).execute().get();
+//                    tvResultado.setText(retorno.toString());
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                } catch (ExecutionException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
 
 
     }
